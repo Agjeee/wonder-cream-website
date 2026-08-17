@@ -117,8 +117,20 @@
       </div>
 
       <div class="uses-showcase">
-        <img src="assets/images/uses-summer.jpg" alt="Summer uses of Wonder Cream: pimples, tired feet, flea and mosquito bites, light eczema, nappy rashes and sore muscles" loading="lazy">
-        <img src="assets/images/uses-winter.jpg" alt="Winter uses of Wonder Cream: kitchen burns, accidental cuts, sneezing, asthmatic breathing, itchy scalp, headaches and neck pain" loading="lazy">
+        <figure class="poster">
+          <button class="poster-btn" type="button" data-full="assets/images/uses-summer.jpg" aria-label="Enlarge the summer uses poster">
+            <img src="assets/images/uses-summer.jpg" alt="Summer uses of Wonder Cream: sunburn, cracked heels, pimples, tired feet, flea and mosquito bites, light eczema, nappy rashes and sore muscles" loading="lazy">
+            <span class="poster-zoom" aria-hidden="true">Tap to enlarge</span>
+          </button>
+          <figcaption>In Summer</figcaption>
+        </figure>
+        <figure class="poster">
+          <button class="poster-btn" type="button" data-full="assets/images/uses-winter.jpg" aria-label="Enlarge the winter uses poster">
+            <img src="assets/images/uses-winter.jpg" alt="Winter uses of Wonder Cream: light steam burns, accidental cuts, sneezing from irritating smells, itchy scalp, headaches, grass burns and morning neck pain" loading="lazy">
+            <span class="poster-zoom" aria-hidden="true">Tap to enlarge</span>
+          </button>
+          <figcaption>In Winter</figcaption>
+        </figure>
       </div>
       <p class="disclaimer">Wonder Cream is a traditional skincare balm intended for minor, everyday skin comfort. It is not a medical treatment — for persistent or serious conditions, please consult your pharmacist or doctor.</p>
     </div>
@@ -232,6 +244,11 @@
     <p class="footer-copy">&copy; <span id="year"></span> Wonder Cream. This is an informational website; Wonder Cream is not sold directly online.</p>
   </div>
 </footer>
+
+<div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Enlarged poster">
+  <button class="lightbox-close" id="lightboxClose" type="button" aria-label="Close">&times;</button>
+  <img id="lightboxImg" src="" alt="">
+</div>
 
 <a class="whatsapp-fab" href="https://wa.me/27845481543?text=Hi%2C%20I%27d%20like%20to%20know%20more%20about%20Wonder%20Cream." target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
   <svg viewBox="0 0 32 32" width="28" height="28" fill="currentColor" aria-hidden="true"><path d="M16.001 3C9.373 3 4 8.373 4 15c0 2.386.697 4.61 1.897 6.481L4 29l7.716-1.87A11.94 11.94 0 0016 27c6.627 0 12-5.373 12-12S22.628 3 16.001 3zm6.99 16.94c-.29.816-1.442 1.5-1.995 1.583-.51.076-1.146.108-1.849-.116-.426-.135-.973-.316-1.674-.62-2.946-1.272-4.868-4.24-5.014-4.437-.147-.196-1.204-1.6-1.204-3.052 0-1.453.762-2.167 1.032-2.464.27-.297.588-.371.784-.371s.393.002.564.01c.181.008.424-.069.663.505.245.588.833 2.03.906 2.177.073.147.122.318.024.514-.098.196-.147.318-.294.49-.147.171-.31.382-.442.514-.147.147-.3.306-.13.6.171.294.762 1.257 1.635 2.036 1.123 1.002 2.07 1.312 2.365 1.459.294.147.466.122.637-.074.171-.196.735-.858.931-1.152.196-.294.392-.245.662-.147.27.098 1.71.807 2.004.954.294.147.49.22.564.343.073.122.073.71-.216 1.526z"/></svg>
