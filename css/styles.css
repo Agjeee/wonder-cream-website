@@ -242,19 +242,19 @@ h2.center, p.section-sub.center { text-align: center; margin-left: auto; margin-
   box-shadow: var(--shadow);
 }
 .poster-btn:focus-visible { outline: 3px solid var(--coral); outline-offset: 3px; }
-/* 'contain' keeps the whole poster visible — cropping cuts off the heading and
-   the panels people actually want to read. */
+/* Card shape matches the poster crop (900x1291) exactly, so 'cover' fills
+   edge to edge without cropping anything or leaving letterbox bars. */
 .uses-showcase img {
   width: 100%;
-  aspect-ratio: 3/4;
-  object-fit: contain;
+  aspect-ratio: 900 / 1291;
+  object-fit: cover;
   background: var(--white);
   display: block;
 }
 .poster-zoom {
   position: absolute;
   right: 12px;
-  bottom: 12px;
+  top: 12px;
   background: rgba(34, 57, 43, 0.82);
   color: var(--white);
   font-size: 0.78rem;
